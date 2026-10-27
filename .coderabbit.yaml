@@ -1,0 +1,11 @@
+# CodeRabbit configuration (free on public repositories). AGENTS.md holds
+# this repo's rules and is read by default as a code guideline.
+language: en-US
+reviews:
+  profile: chill
+  high_level_summary: false
+  poem: false
+  review_status: false
+  path_instructions:
+    - path: "**/*.html"
+      instructions: "Plain static HTML with no external scripts or trackers. Flag anything personal: real names, email addresses, client IDs or secrets, project numbers. Never suggest changing the google<hash>.html verification file."

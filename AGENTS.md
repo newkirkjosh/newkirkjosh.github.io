@@ -15,6 +15,18 @@ GitHub Pages site (`https://newkirkjosh.github.io/`) that supplies the home page
 3. In Google Cloud, on the app's Branding page, use home page `https://newkirkjosh.github.io/`, privacy policy `https://newkirkjosh.github.io/privacy.html`, authorized domain `newkirkjosh.github.io`.
 4. Request the narrowest scopes that work. Sensitive or restricted scopes need Google verification; non-sensitive ones (such as `drive.file`) do not.
 
+## Tracker
+GitHub issues on this repository.
+
+## Layers
+None: a static site with no layered `dev` runs.
+
+## Pull requests
+Conventional-commit titles. Labels: one of `enhancement`, `bug` or `documentation`. No project board. Squash merge only.
+
+## Merge policy
+An agent may squash-merge its own PR when every gate holds on the PR's head commit, re-checked right before merging: CI green, the Codex cross-review converged, every CodeRabbit comment fixed or answered, and no unresolved review thread. Hand the merge back to the user instead when the PR touches `privacy.html` (the policy Google reviews), the `google<hash>.html` verification file, or `.github/workflows/`.
+
 ## Code Review Rules
 Read `REVIEW.md` at the repository root and apply it in full as the review rules for this repo. This section exists for Codex, which reads `AGENTS.md` but not `REVIEW.md`.
 

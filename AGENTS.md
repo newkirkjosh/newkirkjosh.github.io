@@ -7,7 +7,7 @@ GitHub Pages site (`https://newkirkjosh.github.io/`) that supplies the home page
 - `privacy.html`: one privacy policy for all listed apps. Keep it generic; app-specific details belong in the list on `index.html`.
 - `google<hash>.html`: Google Search Console ownership file for the URL-prefix property `https://newkirkjosh.github.io/`. Never rename, edit or delete it, or the domain stops counting as verified and branding checks fail.
 - `_config.yml`: tells GitHub Pages' Jekyll build not to publish the agent and review files.
-- `.github/workflows/secrets.yml`: scans the full history for secrets with gitleaks on every PR and push to `main`.
+- `.github/workflows/secrets.yml`: scans the full history for secrets with gitleaks on every PR (any base) and every push to `main`.
 
 ## Adding an app
 1. Add one `<li>` to the Apps list in `index.html`: the consent-screen app name, its purpose, its scopes.

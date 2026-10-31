@@ -25,7 +25,7 @@ None: a static site with no layered `dev` runs.
 Conventional-commit titles. Labels: one of `enhancement`, `bug` or `documentation`. No project board. Squash merge only.
 
 ## Merge policy
-An agent may squash-merge its own PR when every gate holds on the PR's head commit, re-checked right before merging: CI green, the Codex cross-review converged, every CodeRabbit comment fixed or answered, and no unresolved review thread. Hand the merge back to the user instead when the PR touches `privacy.html` (the policy Google reviews), the `google<hash>.html` verification file, or `.github/workflows/`.
+An agent may squash-merge its own PR when every gate holds on the PR's head commit, re-checked right before merging: CI green, the Codex cross-review converged, every CodeRabbit comment fixed or answered, and no unresolved review thread. Hand the merge back to the user instead when the PR touches `privacy.html` (the policy Google reviews), the `google<hash>.html` verification file, `.github/workflows/`, the review rules and what applies them (`REVIEW.md`, `.coderabbit.yaml`), or this Merge policy or the Code Review Rules section of this file.
 
 ## Code Review Rules
 Read `REVIEW.md` at the repository root and apply it in full as the review rules for this repo. This section exists for Codex, which reads `AGENTS.md` but not `REVIEW.md`.
